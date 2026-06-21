@@ -10,6 +10,9 @@ find_package(SDL2 CONFIG REQUIRED)
 
 add_executable(psx_engine
     src/main.cpp
+    src/core/color.cpp
+    src/core/framebuffer.cpp
+    src/engine/application.cpp
 )
 
 target_include_directories(psx_engine PRIVATE
@@ -20,4 +23,3 @@ target_link_libraries(psx_engine PRIVATE
     SDL2::SDL2
     SDL2::SDL2main
 )
-
